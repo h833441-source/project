@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    box-sizing: border-box;
+    position: fixed;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.header-nav-right {
+    display: flex;
+    align-items: center;
+}
+.nav-link-exact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300; /* Делаем шрифт более тонким, как в Figma */
+    color: #a0a0a5; /* Чуть приглушенный цвет для неактивных ссылок */
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+.nav-link-exact:hover {
+    color: #ffffff; /* При наведении текст становится ярко-белым */
+}
+.header-container {
+    max-width: 1280px; /* Выравниваем по ширине с обновленным каталогом карточек */
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 20px; /* Аккуратные отступы сверху */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-sizing: border-box;
+}
